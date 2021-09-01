@@ -11,6 +11,8 @@ class Tables{
             servico varchar(20) not null,
             status varchar(20) not null,
             observacoes text,
+            data datetime not null,
+            dataCriacao datetime not null,
             primary key(id));`
 
         this.conexao.query(sql, (erro) => {
