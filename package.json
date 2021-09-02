@@ -1,24 +1,21 @@
 {
-  "name": "cursonode",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "pretest": "eslint --ignore-path .gitignore .",
-    "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "consign": "^0.1.6",
-    "express": "^4.17.1",
-    "moment": "^2.29.1",
-    "mysql2": "^2.3.0"
-  },
-  "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-strongloop": "^2.1.0",
-    "nodemon": "^2.0.12"
-  }
+    "name": "cursonode",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "consign": "^0.1.6",
+        "express": "^4.17.1",
+        "moment": "^2.29.1",
+        "mysql2": "^2.3.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.12"
+    }
 }

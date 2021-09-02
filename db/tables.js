@@ -1,5 +1,5 @@
-class Tables{
-    init(conexao){
+class Tables {
+    init(conexao) {
         this.conexao = conexao
         this.criarAtendimentos()
     }
@@ -16,11 +16,11 @@ class Tables{
             primary key(id));`
 
         this.conexao.query(sql, (erro) => {
-            if(erro) {
-                console.log(erro)
-            } 
+        if (erro) {
+            console.log(erro)
+        }
         })
     }
 }
 
-module.exports = new Tables
+module.exports = new Tables()
