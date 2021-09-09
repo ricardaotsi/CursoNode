@@ -1,0 +1,8 @@
+{
+    "mysql": {
+        "bd": "petshop",
+        "user": "local",
+        "pass": "freakcrow",
+        "host": "127.0.0.1"
+    }
+}

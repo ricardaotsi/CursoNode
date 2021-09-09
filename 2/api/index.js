@@ -1,13 +1,8 @@
-const customExpress = require('./config/customExpress')
-const conexao = require('./db/connection')
-const tables = require('./db/tables')
+const express = require('express')
+const roteador = require('./rotas/fornecedores')
+const app = express()
 
-conexao.connect(erro =>{
-    if(erro){
-        console.log(erro)
-    } else {
-        tables.init(conexao)
-        const app = customExpress()
-        app.listen(3000, () => console.log('servidor rodando'))
-    }
-})
+app.use(express.json())
+app.use('/api/fornecedores', roteador)
+
+app.listen(3000, () => console.log('ON'))
